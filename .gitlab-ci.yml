@@ -1,0 +1,27 @@
+stages:
+  - check
+
+chache:
+  paths:
+    - node_modules/
+
+Build:
+  stage: check
+  image: node:12.13.0
+  script:
+    - yarn
+    - yarn build
+  only:
+    - merge_requests
+  artifacts:
+    paths:
+      - node_modules/
+
+Eslint:
+  stage: check
+  image: node:12.13.0
+  script:
+    - yarn
+    - yarn lint
+  only:
+    - merge_requests

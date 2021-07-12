@@ -1,0 +1,11 @@
+/* global gapi */
+/build/**
+/src/serviceWorker.js
+/src/**/*.css
+/src/**/*.scss
+/src/**/*.test.js
+/src/__tests__
+/src/redux
+/src/__mocks__
+
+git commit -m "Inital Project Setup (React Project Structure, Linting, Pull Request Template, Prettier Auto-Formatter)"
