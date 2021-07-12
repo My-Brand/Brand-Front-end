@@ -1,10 +1,6 @@
 stages:
   - check
 
-chache:
-  paths:
-    - node_modules/
-
 Build:
   stage: check
   image: node:12.13.0
