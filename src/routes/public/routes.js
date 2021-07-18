@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from 'antd/lib/layout';
 import SideMenu from '../../components/SideMenu';
 import AnimatedBackgroundItems from '../../components/AnimatedBackgroundItems';
-import IndexPage from '../../components/IndexPage';
+import EntirePortfolio from './entirePortfolio';
 
 const PuclicRoutes = () => (
   <Layout className="height_full" style={{ position: 'relative' }}>
@@ -10,7 +10,8 @@ const PuclicRoutes = () => (
     <Layout className="contents_layout">
       <AnimatedBackgroundItems.Circles />
       <AnimatedBackgroundItems.Hills />
-      <IndexPage />
+
+      <EntirePortfolio />
     </Layout>
   </Layout>
 );

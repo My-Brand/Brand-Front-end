@@ -8,6 +8,7 @@ export const BackgroundCircleOne = styled.div`
   position: fixed;
   top: -65%;
   right: -10%;
+  z-index: 0;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -28,6 +29,7 @@ export const BackgroundHillOne = styled.div`
   position: absolute;
   opacity: 0.1;
   animation: hill_animation 2s infinite linear;
+  z-index: -10;
 
   @media screen and (max-width: 768px) {
     display: none;

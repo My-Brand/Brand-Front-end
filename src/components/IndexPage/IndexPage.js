@@ -2,9 +2,11 @@ import React from 'react';
 import Typography from 'antd/lib/typography';
 import Image from 'antd/lib/image';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import { Link } from 'react-router-dom';
 import { message } from '../../utils/message';
 import MyLogo from '../../assets/images/Logo.jpg';
 import SocialMediaIcons from '../SocialMediaIcons';
+import routesConfig from '../../utils/routesConfig';
 import {
   PageContainer,
   WelcomeContainer,
@@ -44,20 +46,22 @@ const IndexPage = () => (
       <Title className="fontwe300 text_24 grey">{message.body.index.text2}</Title>
     </WelcomeContainer>
 
-    <GetToKnowButton className="text_32 fontwe600 blue pointer">
-      <CircleAndText>
-        <ButtonCircle />{' '}
-        <IndexButtonText className="text_24">{message.buttons.index}</IndexButtonText>
-      </CircleAndText>
+    <Link to={routesConfig.PORTFOLIO.Index.url}>
+      <GetToKnowButton className="text_32 fontwe600 blue pointer">
+        <CircleAndText>
+          <ButtonCircle />{' '}
+          <IndexButtonText className="text_24">{message.buttons.index}</IndexButtonText>
+        </CircleAndText>
 
-      <ButtonNextIcons>
-        <NavigateNextIcon className="animate_index_button text_32" />
-        <NavigateNextIcon
-          style={{ marginLeft: '-12px' }}
-          className="animate_index_button text_32"
-        />
-      </ButtonNextIcons>
-    </GetToKnowButton>
+        <ButtonNextIcons>
+          <NavigateNextIcon className="animate_index_button text_32" />
+          <NavigateNextIcon
+            style={{ marginLeft: '-12px' }}
+            className="animate_index_button text_32"
+          />
+        </ButtonNextIcons>
+      </GetToKnowButton>
+    </Link>
 
     <SocialMediaIcons />
   </PageContainer>

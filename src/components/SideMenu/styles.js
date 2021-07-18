@@ -4,6 +4,7 @@ export const StyledSideMenu = styled.div`
   position: fixed;
   height: 100vh;
   width: 4rem;
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     height: 64px;
