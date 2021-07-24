@@ -9,10 +9,11 @@ export const AboutContainer = styled.section`
   margin-left: 80px;
 
   @media screen and (max-width: 768px) {
+    background-color: transparent;
     width: 100%;
     margin-left: 0;
+    padding: 0px;
     padding-top: 94px;
-    padding-left: 32px;
     text-align: center;
   }
 `;
