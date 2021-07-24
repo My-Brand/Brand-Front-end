@@ -1,7 +1,10 @@
+# Set where you want your pipeline to run
+# It can either run on push, or pull_request
 on:
   pull_request:
     branches: [master, staging, dev]
 
+# Define the jobs your pipeline will have
 jobs:
   Eslint:
     runs-on: ubuntu-latest
