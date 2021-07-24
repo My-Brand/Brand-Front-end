@@ -22,14 +22,14 @@ Build:
     - merge_requests
   artifacts:
     paths:
-      - node_modules/
+      # - node_modules/
       - build/
 
 Deploy:
   stage: deploy
   image: node:16.5.0
   script:
-    - yarn global add netlify-cli
+    - npm install -g netlify-cli
     - netlify deploy --dir=build --prod
   only:
     - merge_requests
