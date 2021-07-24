@@ -7,7 +7,7 @@ export const StyledSideMenu = styled.div`
   z-index: 10;
 
   @media screen and (max-width: 768px) {
-    height: 64px;
+    height: 50px;
     width: 100% !important;
     left: 0;
     right: 0;
@@ -29,6 +29,9 @@ export const SideMenuContents = styled.div`
   }
 `;
 
-export const SideMenuIconContainer = styled.div``;
+export const SideMenuIconContainer = styled.div`
+  display: grid;
+  place-content: center;
+`;
 
 export const SideMenuToolTip = styled.div``;

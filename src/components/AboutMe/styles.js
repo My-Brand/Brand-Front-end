@@ -9,10 +9,11 @@ export const AboutContainer = styled.section`
   margin-left: 80px;
 
   @media screen and (max-width: 768px) {
+    background-color: transparent;
     width: 100%;
     margin-left: 0;
-    padding-top: 112px;
-    padding-left: 32px;
+    padding: 0px;
+    padding-top: 94px;
     text-align: center;
   }
 `;
@@ -39,7 +40,9 @@ export const AboutLogoContainer = styled.div`
   place-content: center;
 
   @media screen and (max-width: 768px) {
-    top: -80px;
+    width: 80px;
+    height: 80px;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
   }
