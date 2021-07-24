@@ -27,12 +27,13 @@ Build:
 
 Deploy:
   stage: deploy
-  image: node:16.5.0
-  script:
-    - yarn
-    - yarn build
-    - npx netlify-cli deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
-    # - npm install -g netlify-cli
-    # - netlify deploy --dir=build --prod
+  environment:
+    name: production
+    url: https://distracted-swartz-dde704.netlify.app/
   only:
     - merge_requests
+  script:
+    - npm i
+    # your build command
+    - npm run build
+    - npx netlify-cli deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
