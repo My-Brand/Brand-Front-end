@@ -21,7 +21,7 @@ const { Title } = Typography;
 const AboutMe = () => (
   <AboutContainer>
     <AboutLogoContainer>
-      <Image src={HelloWorldLogo} preview={false} width={50} />
+      <Image src={HelloWorldLogo} preview={false} className="myLogo_About" />
     </AboutLogoContainer>
 
     <Title className="black fontwe600 mabo64">{message.titles.aboutMe.title1}</Title>

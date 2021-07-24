@@ -24,6 +24,9 @@ export const GetToKnowButton = styled.button`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding: 6px 12px;
+    padding-right: 12px;
+    column-gap: 0.5rem;
   }
 `;
 

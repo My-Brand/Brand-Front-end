@@ -11,7 +11,7 @@ export const AboutContainer = styled.section`
   @media screen and (max-width: 768px) {
     width: 100%;
     margin-left: 0;
-    padding-top: 112px;
+    padding-top: 94px;
     padding-left: 32px;
     text-align: center;
   }
@@ -39,7 +39,9 @@ export const AboutLogoContainer = styled.div`
   place-content: center;
 
   @media screen and (max-width: 768px) {
-    top: -80px;
+    width: 80px;
+    height: 80px;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
   }

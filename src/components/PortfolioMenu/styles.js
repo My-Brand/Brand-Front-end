@@ -10,7 +10,7 @@ export const PortfolioMenuContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     column-gap: 0;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
     justify-content: space-between !important;
   }
 `;
@@ -23,7 +23,8 @@ export const PortfolioMenuIcon = styled.div`
   border-radius: 12px;
 
   @media screen and (max-width: 768px) {
-    padding: 16px;
+    padding: 12px;
+    border-radius: 6px;
   }
 `;
 

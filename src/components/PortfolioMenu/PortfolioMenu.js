@@ -29,19 +29,19 @@ const PortfolioMenu = () => {
     <PortfolioMenuContainer>
       <Link to={routesConfig.PORTFOLIO.Index.url} className="black">
         <PortfolioMenuIcon className={`pointer home_menu ${activeMenu === 1 && 'active'}`}>
-          <PeopleAltOutlinedIcon className="text_32" />
+          <PeopleAltOutlinedIcon className="text_32 text_16_sm" />
         </PortfolioMenuIcon>
       </Link>
 
       <Link to={routesConfig.PORTFOLIO.Interests.url} className="black">
         <PortfolioMenuIcon className={`pointer home_menu ${activeMenu === 2 && 'active'}`}>
-          <FavoriteBorderOutlinedIcon className="text_32" />
+          <FavoriteBorderOutlinedIcon className="text_32 text_16_sm" />
         </PortfolioMenuIcon>
       </Link>
 
       <Link to={routesConfig.PORTFOLIO.SkillSet.url} className="black">
         <PortfolioMenuIcon className={`pointer home_menu ${activeMenu === 3 && 'active'}`}>
-          <CodeOutlinedIcon className="text_32" />
+          <CodeOutlinedIcon className="text_32 text_16_sm" />
         </PortfolioMenuIcon>
       </Link>
 
