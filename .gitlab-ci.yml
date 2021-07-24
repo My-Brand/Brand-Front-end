@@ -5,7 +5,7 @@ stages:
 
 Eslint:
   stage: eslint
-  image: node:12.13.0
+  image: node:16.5.0
   script:
     - yarn
     - yarn lint
@@ -14,7 +14,7 @@ Eslint:
 
 Build:
   stage: build
-  image: node:12.13.0
+  image: node:16.5.0
   script:
     - yarn
     - yarn build
@@ -27,7 +27,7 @@ Build:
 
 Deploy:
   stage: deploy
-  image: node:12.13.0
+  image: node:16.5.0
   script:
     - yarn global add netlify-cli
     - netlify deploy --dir=build --prod
