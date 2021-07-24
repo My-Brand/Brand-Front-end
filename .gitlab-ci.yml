@@ -1,8 +1,19 @@
 stages:
-  - check
+  - eslint
+  - build
+  - deploy
+
+Eslint:
+  stage: eslint
+  image: node:12.13.0
+  script:
+    - yarn
+    - yarn lint
+  only:
+    - merge_requests
 
 Build:
-  stage: check
+  stage: build
   image: node:12.13.0
   script:
     - yarn
@@ -12,12 +23,13 @@ Build:
   artifacts:
     paths:
       - node_modules/
+      - build/
 
-Eslint:
-  stage: check
+Deploy:
+  stage: deploy
   image: node:12.13.0
   script:
-    - yarn
-    - yarn lint
+    - yarn global add netlify-cli
+    - netlify deploy --dir=build --prod
   only:
     - merge_requests
