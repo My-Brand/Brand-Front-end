@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const EntirePortfolioContainer = styled.section`
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   padding: 0 120px;
   display: grid;
   align-items: center;

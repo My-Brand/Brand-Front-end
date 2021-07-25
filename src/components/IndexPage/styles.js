@@ -10,7 +10,8 @@ export const WelcomeContainer = styled.section`
 
 export const IndexPageContainer = styled.section`
   padding: 0 120px;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   display: grid;
   align-items: center;
   overflow-y: auto;
