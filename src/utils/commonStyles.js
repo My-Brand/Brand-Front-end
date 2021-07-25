@@ -10,7 +10,7 @@ export const EntirePortfolioContainer = styled.section`
 
   @media screen and (max-width: 768px) {
     padding: 0 0;
-    margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
   }
 `;
 
