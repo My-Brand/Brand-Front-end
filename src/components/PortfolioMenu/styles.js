@@ -5,7 +5,7 @@ export const PortfolioMenuContainer = styled.div`
   display: flex;
   column-gap: 7.48rem;
   margin: 0 auto;
-  margin-bottom: 140px;
+  margin-bottom: 120px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -26,9 +26,4 @@ export const PortfolioMenuIcon = styled.div`
     padding: 12px;
     border-radius: 6px;
   }
-`;
-
-export const EntirePortfolioContainer = styled.div`
-  min-height: 70vh;
-  width: 100%;
 `;

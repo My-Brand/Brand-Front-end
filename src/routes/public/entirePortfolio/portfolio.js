@@ -5,19 +5,21 @@ import AboutMe from '../../../components/AboutMe';
 import Interests from '../../../components/Interests';
 import SkillSet from '../../../components/SkillSet';
 import Experience from '../../../components/Experience';
-import { EntirePortfolioContainer } from '../../../components/PortfolioMenu/styles';
+import { EntirePortfolioContainer, EntirePortfolioContents } from '../../../utils/commonStyles';
 import routesConfig from '../../../utils/routesConfig';
 
 const Portfolio = () => (
   <EntirePortfolioContainer>
-    <PortfolioMenu />
+    <EntirePortfolioContents>
+      <PortfolioMenu />
 
-    <Switch>
-      <Route path={routesConfig.PORTFOLIO.Index.url} component={AboutMe} exact />
-      <Route path={routesConfig.PORTFOLIO.Interests.url} component={Interests} exact />
-      <Route path={routesConfig.PORTFOLIO.SkillSet.url} component={SkillSet} exact />
-      <Route path={routesConfig.PORTFOLIO.Experience.url} component={Experience} exact />
-    </Switch>
+      <Switch>
+        <Route path={routesConfig.PORTFOLIO.Index.url} component={AboutMe} exact />
+        <Route path={routesConfig.PORTFOLIO.Interests.url} component={Interests} exact />
+        <Route path={routesConfig.PORTFOLIO.SkillSet.url} component={SkillSet} exact />
+        <Route path={routesConfig.PORTFOLIO.Experience.url} component={Experience} exact />
+      </Switch>
+    </EntirePortfolioContents>
   </EntirePortfolioContainer>
 );
 

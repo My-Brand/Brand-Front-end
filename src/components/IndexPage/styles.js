@@ -8,7 +8,28 @@ export const WelcomeContainer = styled.section`
   }
 `;
 
-export const PageContainer = styled.section``;
+export const IndexPageContainer = styled.section`
+  padding: 0 120px;
+  min-height: 100vh;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 0;
+  }
+`;
+
+export const IndexPageContents = styled.section`
+  padding: 120px 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 32px;
+  }
+`;
+
 export const ButtonNextIcons = styled.div``;
 
 export const GetToKnowButton = styled.button`

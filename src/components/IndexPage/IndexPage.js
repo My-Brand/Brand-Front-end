@@ -8,7 +8,8 @@ import MyLogo from '../../assets/images/Logo.jpg';
 import SocialMediaIcons from '../SocialMediaIcons';
 import routesConfig from '../../utils/routesConfig';
 import {
-  PageContainer,
+  IndexPageContainer,
+  IndexPageContents,
   WelcomeContainer,
   GetToKnowButton,
   ButtonCircle,
@@ -23,48 +24,52 @@ import {
 const { Title } = Typography;
 
 const IndexPage = () => (
-  <PageContainer>
-    <HelloContainer>
-      <Title className="fontwe700 text_stroke text_100 ">{message.titles.index.title1.text1}</Title>
+  <IndexPageContainer>
+    <IndexPageContents>
+      <HelloContainer>
+        <Title className="fontwe700 text_stroke text_100 ">
+          {message.titles.index.title1.text1}
+        </Title>
 
-      <MyLogoContainer>
-        <Image src={MyLogo} preview={false} className="myLogo_img" />
-        <NotifyIcon />
-      </MyLogoContainer>
-    </HelloContainer>
+        <MyLogoContainer>
+          <Image src={MyLogo} preview={false} className="myLogo_img" />
+          <NotifyIcon />
+        </MyLogoContainer>
+      </HelloContainer>
 
-    <Title className="fontwe700 text_stroke text_100 text_center_sm">
-      {message.titles.index.title1.text2}
-    </Title>
+      <Title className="fontwe700 text_stroke text_100 text_center_sm">
+        {message.titles.index.title1.text2}
+      </Title>
 
-    <Title className="text_24 whiteBlack fontwe700 mabo64 frontend_text  text_center_sm">
-      {message.titles.index.title2}
-    </Title>
+      <Title className="text_24 whiteBlack fontwe700 mabo64 frontend_text  text_center_sm">
+        {message.titles.index.title2}
+      </Title>
 
-    <WelcomeContainer className="mabo64 text_center_sm">
-      <Title className="fontwe300 text_24 grey mabo64">{message.body.index.text1}</Title>
-      <Title className="fontwe300 text_24 grey">{message.body.index.text2}</Title>
-    </WelcomeContainer>
+      <WelcomeContainer className="mabo64 text_center_sm">
+        <Title className="fontwe300 text_24 grey mabo64">{message.body.index.text1}</Title>
+        <Title className="fontwe300 text_24 grey">{message.body.index.text2}</Title>
+      </WelcomeContainer>
 
-    <Link to={routesConfig.PORTFOLIO.Index.url}>
-      <GetToKnowButton className="text_32 fontwe600 blue pointer">
-        <CircleAndText>
-          <ButtonCircle />{' '}
-          <IndexButtonText className="text_24">{message.buttons.index}</IndexButtonText>
-        </CircleAndText>
+      <Link to={routesConfig.PORTFOLIO.Index.url}>
+        <GetToKnowButton className="text_32 fontwe600 blue pointer">
+          <CircleAndText>
+            <ButtonCircle />{' '}
+            <IndexButtonText className="text_24">{message.buttons.index}</IndexButtonText>
+          </CircleAndText>
 
-        <ButtonNextIcons>
-          <NavigateNextIcon className="animate_index_button text_32" />
-          <NavigateNextIcon
-            style={{ marginLeft: '-12px' }}
-            className="animate_index_button text_32"
-          />
-        </ButtonNextIcons>
-      </GetToKnowButton>
-    </Link>
+          <ButtonNextIcons>
+            <NavigateNextIcon className="animate_index_button text_32" />
+            <NavigateNextIcon
+              style={{ marginLeft: '-12px' }}
+              className="animate_index_button text_32"
+            />
+          </ButtonNextIcons>
+        </GetToKnowButton>
+      </Link>
 
-    <SocialMediaIcons />
-  </PageContainer>
+      <SocialMediaIcons />
+    </IndexPageContents>
+  </IndexPageContainer>
 );
 
 export default IndexPage;
