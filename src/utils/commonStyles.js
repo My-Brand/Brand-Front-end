@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const EntirePortfolioContainer = styled.section`
-  padding: 0 120px;
   height: 100vh;
+  padding: 0 120px;
   display: grid;
   align-items: center;
   overflow-y: auto;
@@ -10,7 +10,7 @@ export const EntirePortfolioContainer = styled.section`
 
   @media screen and (max-width: 768px) {
     padding: 0 0;
-    margin-bottom: 1rem;
+    height: calc(100vh - 50px);
   }
 `;
 
