@@ -18,7 +18,7 @@ export const IndexPageContainer = styled.section`
 
   @media screen and (max-width: 768px) {
     padding: 0 0;
-    height: calc(100vh - 50px);
+    height: calc(100% - 0.6rem);
   }
 `;
 
