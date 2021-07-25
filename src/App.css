@@ -201,10 +201,6 @@ body {
 
 .contents_layout {
   margin-left: 4rem;
-  padding: 120px;
-  display: flex;
-  justify-content: center;
-  overflow-y: auto;
 }
 
 .pointer {
@@ -297,9 +293,7 @@ body {
 @media screen and (max-width: 768px) {
   .contents_layout {
     margin-left: 0;
-    padding: 32px 32px;
-    margin-bottom: 80px;
-    align-items: center;
+    margin-bottom: 2.6rem;
   }
 
   .tooltip {
