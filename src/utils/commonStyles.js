@@ -9,7 +9,8 @@ export const EntirePortfolioContainer = styled.section`
   z-index: 1;
 
   @media screen and (max-width: 768px) {
-    padding: 0 32px;
+    padding: 0 0;
+    margin-bottom: 0.6rem;
   }
 `;
 
@@ -18,6 +19,6 @@ export const EntirePortfolioContents = styled.section`
   position: relative;
 
   @media screen and (max-width: 768px) {
-    padding: 64px 0;
+    padding: 32px;
   }
 `;

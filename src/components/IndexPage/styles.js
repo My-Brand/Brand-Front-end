@@ -17,7 +17,8 @@ export const IndexPageContainer = styled.section`
   z-index: 1;
 
   @media screen and (max-width: 768px) {
-    padding: 0 32px;
+    padding: 0 0;
+    margin-bottom: 0.6rem;
   }
 `;
 
@@ -25,7 +26,7 @@ export const IndexPageContents = styled.section`
   padding: 120px 0;
 
   @media screen and (max-width: 768px) {
-    padding: 64px 0;
+    padding: 32px;
   }
 `;
 
