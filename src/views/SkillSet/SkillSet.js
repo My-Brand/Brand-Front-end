@@ -21,7 +21,7 @@ const SkillSet = () => (
     </Row>
 
     <StillLearningCont className="mato16">
-      <Title className="fontwe300 text_16 grey">
+      <Title className="fontwe300 text_16_res grey">
         &#128591; {message.body.skillset.footer_text}
       </Title>
     </StillLearningCont>
