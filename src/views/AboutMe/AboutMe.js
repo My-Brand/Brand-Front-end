@@ -2,6 +2,9 @@ import React from 'react';
 import Typography from 'antd/lib/typography';
 import { Link } from 'react-router-dom';
 import Image from 'antd/lib/image';
+import Row from 'antd/lib/row';
+import Col from 'antd/lib/col';
+import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
 import { message } from '../../utils/message';
 import HelloWorldLogo from '../../assets/images/hello_world_logo2a.png';
 import Instagram from '../../assets/icons/instagram.png';
@@ -13,7 +16,8 @@ import {
   AboutContainer,
   AboutTextContainer,
   AboutLogoContainer,
-  AboutSocialMediaIconsContainer
+  AboutSocialMediaIconsContainer,
+  CommunityText
 } from './styles';
 
 const { Title } = Typography;
@@ -24,23 +28,27 @@ const AboutMe = () => (
       <Image src={HelloWorldLogo} preview={false} className="myLogo_About" />
     </AboutLogoContainer>
 
-    <Title className="black fontwe600 mabo64">{message.titles.aboutMe.title1}</Title>
+    <Title className="black fontwe600 mabo64 text_50">{message.titles.aboutMe.title1}</Title>
 
-    <AboutTextContainer className="mabo64">
+    <AboutTextContainer className="mabo32">
       <p className="text_16 ">
         {message.body.about.contributionText.text1}{' '}
-        <Link to="#">{message.body.about.contributionText.begginerLink}</Link>{' '}
+        <Link to="#" className="blue">
+          {message.body.about.contributionText.begginerLink}
+        </Link>{' '}
         {message.body.about.contributionText.text2}
       </p>
     </AboutTextContainer>
 
-    <p className="text_16 mabo64">
-      {message.body.about.joinCommunity.text1}{' '}
-      <Link to="#" className="blue">
-        {message.body.about.joinCommunity.instagramLink}
-      </Link>{' '}
-      {message.body.about.joinCommunity.text2}
-    </p>
+    <Row gutter={16} className="communit_cont">
+      <Col>
+        <CommunityText className="mabo32">{message.body.about.joinCommunity}</CommunityText>
+      </Col>
+
+      <Col>
+        <ExpandMoreOutlinedIcon className="animated_down_arrow" />
+      </Col>
+    </Row>
 
     <AboutSocialMediaIconsContainer>
       <Image src={Instagram} preview={false} className="social_icon" />

@@ -1,1 +1,1 @@
-export { default } from './SkillSet';
+export { default } from './SkillCategory';

@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 
 export const PortfolioMenuContainer = styled.div`
-  width: fit-content;
+  width: 100%;
   display: flex;
-  column-gap: 7.48rem;
+  column-gap: 10%;
   margin: 0 auto;
   margin-bottom: 120px;
+  margin-left: 5rem;
 
   @media screen and (max-width: 768px) {
     width: 100%;
     column-gap: 0;
-    margin-bottom: 100px;
+    margin-left: 0;
+    margin-bottom: 50px;
     justify-content: space-between !important;
   }
 `;

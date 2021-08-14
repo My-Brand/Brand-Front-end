@@ -6,7 +6,9 @@ export const message = {
       title1: { text1: 'Hell', text2: "I'm Issa Jean Marie" },
       title2: 'Front-end web developer'
     },
-    aboutMe: { title1: 'Social network' }
+    aboutMe: { title1: 'Social network' },
+    interests: 'Interests',
+    skillset: 'Skillset'
   },
   body: {
     index: {
@@ -21,7 +23,12 @@ export const message = {
           'and proving coding related contents on my social media.I like learning and growing with others.',
         begginerLink: 'beginners projects'
       },
-      joinCommunity: { text1: 'Join my', text2: 'community', instagramLink: 'Instagram' }
+      joinCommunity: 'Join my social media community'
+    },
+    skillset: {
+      beta_text: 'top 3s',
+      footer_text:
+        'I really thank everyone who played the role to add any kind of skill in my  skillset!'
     }
   },
   buttons: { index: 'Get to know me!' }
