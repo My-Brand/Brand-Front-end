@@ -12,7 +12,7 @@ export const PortfolioMenuContainer = styled.div`
     width: 100%;
     column-gap: 0;
     margin-left: 0;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     justify-content: space-between !important;
   }
 `;

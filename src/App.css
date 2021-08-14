@@ -116,7 +116,8 @@ body {
   font-size: 0.75rem !important;
 }
 
-.text_16 {
+.text_16,
+.text_16_res {
   font-size: 1rem !important;
 }
 
@@ -314,7 +315,7 @@ body {
 }
 
 .animated_down_arrow {
-  animation: sociamMedia 1s infinite ease-in-out;
+  animation: socialMedia 1s infinite ease-in-out;
 }
 
 .overlay_contents {
@@ -329,6 +330,11 @@ body {
   .contents_layout {
     margin-left: 0;
     margin-bottom: 2.6rem;
+  }
+
+  .communit_cont {
+    width: fit-content !important;
+    margin: 0 auto !important;
   }
 
   .tooltip {
@@ -357,6 +363,11 @@ body {
   .text_64,
   .text_50 {
     font-size: 2rem !important;
+  }
+
+  .text_16_res {
+    font-size: 0.7rem !important;
+    font-weight: normal !important;
   }
 
   .text_stroke {
@@ -391,6 +402,12 @@ body {
 
   .myLogo_About {
     width: 30px;
+  }
+
+  .animated_down_arrow {
+    font-size: 14px !important;
+    margin-top: -10px;
+    animation: socialMediaSm 1s infinite ease-in-out;
   }
 }
 
@@ -441,7 +458,7 @@ body {
   }
 }
 
-@keyframes sociamMedia {
+@keyframes socialMedia {
   0% {
     transform: translateY(0);
   }
@@ -452,6 +469,20 @@ body {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes socialMediaSm {
+  0% {
+    transform: translateY(-3px);
+  }
+
+  50% {
+    transform: translateY(0.2rem);
+  }
+
+  100% {
+    transform: translateY(-3px);
   }
 }
 

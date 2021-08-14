@@ -16,7 +16,8 @@ import {
   AboutContainer,
   AboutTextContainer,
   AboutLogoContainer,
-  AboutSocialMediaIconsContainer
+  AboutSocialMediaIconsContainer,
+  CommunityText
 } from './styles';
 
 const { Title } = Typography;
@@ -39,9 +40,9 @@ const AboutMe = () => (
       </p>
     </AboutTextContainer>
 
-    <Row gutter={16}>
+    <Row gutter={16} className="communit_cont">
       <Col>
-        <p className="text_16 mabo32">{message.body.about.joinCommunity}</p>
+        <CommunityText className="mabo32">{message.body.about.joinCommunity}</CommunityText>
       </Col>
 
       <Col>

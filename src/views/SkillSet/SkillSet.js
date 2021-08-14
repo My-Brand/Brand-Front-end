@@ -11,7 +11,7 @@ const SkillSet = () => (
   <SkillSetContainer>
     <Title className="fontwe600 text_50 black mabo32 relative">
       {message.titles.skillset}
-      <TopThree className="fontwe500 whiteGrey">{message.body.skillset.beta_text}</TopThree>
+      <TopThree className="fontwe500 whiteGrey ">{message.body.skillset.beta_text}</TopThree>
     </Title>
     <Row gutter={24}>
       <SkillCategory title="UI & UX" />

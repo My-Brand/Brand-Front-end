@@ -11,7 +11,7 @@ const SingelSkill = ({ img, rated, unrated }) => (
     <Image preview={false} width={25} src={img} />
 
     <SkillTitleAndRate>
-      <Title className="fontwe600 text_16 whiteBlack capitalize">Balsamiq Design Tool</Title>
+      <Title className="fontwe600 text_16_res whiteBlack capitalize">Balsamiq Design Tool</Title>
 
       <RatesContainer>
         <Image preview={false} width={12} src={rated} />

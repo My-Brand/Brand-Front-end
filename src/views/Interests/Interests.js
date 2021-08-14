@@ -3,14 +3,14 @@ import Typography from 'antd/lib/typography';
 import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import { message } from '../../utils/message';
-import CodingImage from '../../assets/images/coding_interest.jpg';
-import TechImage from '../../assets/images/tech_interest.jpg';
-import BlogImage from '../../assets/images/blog_interest.jpg';
-import DesignImage from '../../assets/images/design_interest.jpg';
-import SetupImage from '../../assets/images/setup_interest.jpg';
-import MoviewsImage from '../../assets/images/movies_interest.jpg';
-import InstagramImage from '../../assets/images/instagram_interest.jpg';
-import SharingImage from '../../assets/images/sharing_interest.jpg';
+import CodingImage from '../../assets/images/coding_interest-min.jpg';
+import TechImage from '../../assets/images/tech_interest-min.jpg';
+import BlogImage from '../../assets/images/blog_interest-min.jpg';
+import DesignImage from '../../assets/images/design_interest-min.jpg';
+import SetupImage from '../../assets/images/setup_interest-min.jpg';
+import MoviewsImage from '../../assets/images/movies_interest-min.jpg';
+import InstagramImage from '../../assets/images/instagram_interest-min.jpg';
+import SharingImage from '../../assets/images/sharing_interest-min.jpg';
 import {
   MyInterestCard,
   InterestsContainer,

@@ -62,10 +62,17 @@ export const AboutSocialMediaIconsContainer = styled.div`
   display: flex;
   column-gap: 45px;
   align-items: center;
-  // background: blue;
 
   @media screen and (max-width: 768px) {
     justify-content: space-around;
     column-gap: 25px;
+  }
+`;
+
+export const CommunityText = styled.p`
+  font-size: 16px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
   }
 `;
