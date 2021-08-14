@@ -5,10 +5,11 @@
 :root {
   --white: #fff;
   --whiteGrey: #f0efef;
-  --blue: #1094d2;
+  --blue: #024d6c;
+  --whiteBlue: #1094d2;
   --grey: #919191;
   --red: #dd4b39;
-  --black: #000;
+  --black: #424242;
   --whiteBlack: #6b6969;
   --hoverColor: #e1e1e2;
 }
@@ -21,7 +22,6 @@
 body {
   font-family: Poppins, sans-serif;
   font-size: 1rem;
-  /* overflow: hidden; */
 }
 
 /* ANTD OVERWRITTEN  */
@@ -96,6 +96,22 @@ body {
   width: 100%;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text_center {
+  text-align: center;
+}
+
 .text_12 {
   font-size: 0.75rem !important;
 }
@@ -112,6 +128,10 @@ body {
   font-size: 2rem !important;
 }
 
+.text_50 {
+  font-size: 3.125rem !important;
+}
+
 .text_64 {
   font-size: 4rem !important;
 }
@@ -124,6 +144,10 @@ body {
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: var(--grey);
   color: transparent !important;
+}
+
+.mabo0 {
+  margin-bottom: 0 !important;
 }
 
 .mabo8 {
@@ -289,6 +313,17 @@ body {
   width: 60px;
 }
 
+.animated_down_arrow {
+  animation: sociamMedia 1s infinite ease-in-out;
+}
+
+.overlay_contents {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 /* SMALL SCREENS  */
 @media screen and (max-width: 768px) {
   .contents_layout {
@@ -307,7 +342,6 @@ body {
   .menu_icon_cont:hover .tooltip {
     display: none;
   }
-
   .text_100 {
     font-size: 3rem !important;
   }
@@ -318,6 +352,11 @@ body {
 
   .text_24 {
     font-size: 1rem !important;
+  }
+
+  .text_64,
+  .text_50 {
+    font-size: 2rem !important;
   }
 
   .text_stroke {
@@ -399,5 +438,29 @@ body {
 
   100% {
     transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes sociamMedia {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0.3rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes interestDesc {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

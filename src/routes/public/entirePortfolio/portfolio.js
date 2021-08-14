@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import PortfolioMenu from '../../../components/PortfolioMenu';
-import AboutMe from '../../../components/AboutMe';
-import Interests from '../../../components/Interests';
-import SkillSet from '../../../components/SkillSet';
-import Experience from '../../../components/Experience';
+import AboutMe from '../../../views/AboutMe/AboutMe';
+import Interests from '../../../views/Interests';
+import SkillSet from '../../../views/SkillSet';
+import Experience from '../../../views/Experience';
 import { EntirePortfolioContainer, EntirePortfolioContents } from '../../../utils/commonStyles';
 import routesConfig from '../../../utils/routesConfig';
 

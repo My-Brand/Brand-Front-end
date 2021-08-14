@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SocialMediaIconsContainer = styled.div`
-  position: absolute;
+  position: fixed;
   width: auto;
   height: 100vh;
   right: 6rem;

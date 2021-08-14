@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   web:
-    image: issa/frontend:latest
+    image: issa/brand:latest
     volumes:
       - ./:/usr/src/app
     restart: always
