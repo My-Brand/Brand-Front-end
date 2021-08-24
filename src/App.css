@@ -290,6 +290,10 @@ body {
   margin-top: 16px;
 }
 
+.exp_cont {
+  width: 80%;
+}
+
 .myLogo_img {
   width: 60px;
   height: 60px;
