@@ -11,6 +11,7 @@ import SetupImage from '../../assets/images/setup_interest-min.jpg';
 import MoviewsImage from '../../assets/images/movies_interest-min.jpg';
 import InstagramImage from '../../assets/images/instagram_interest-min.jpg';
 import SharingImage from '../../assets/images/sharing_interest-min.jpg';
+import Helmet from '../../components/SEO/Helmet';
 import {
   MyInterestCard,
   InterestsContainer,
@@ -21,139 +22,146 @@ import {
 
 const { Title } = Typography;
 
-const Interests = () => (
-  <InterestsContainer>
-    <Title className="fontwe600 text_50 black mabo0">{message.titles.interests}</Title>;
-    <Row gutter={32} className="interests_cont">
-      <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-        <MyInterestCard>
-          <InterestImage src={CodingImage} preview={false} />
+const Interests = () => {
+  Helmet(
+    'Issa Dev | My favorites',
+    'Coding, Blogging, UI/UX, Instagram, Movies, Good Office Setup, Technical Staffs, and Sharing are my great definitions!'
+  );
 
-          <InterestsContainerOverlay>
-            <Title className="fontwe600 text_24 white center">Coding</Title>
+  return (
+    <InterestsContainer>
+      <Title className="fontwe600 text_50 black mabo0">{message.titles.interests}</Title>;
+      <Row gutter={32} className="interests_cont">
+        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
+          <MyInterestCard>
+            <InterestImage src={CodingImage} preview={false} />
 
-            <InterestDescription className="fontwe500 white center">
-              I fall in love with coding since I was a kid! I fall in love with coding since I was a
-              kid! I fall in love with coding since I was a kid! I fall in love with coding since I
-              was a kid!
-            </InterestDescription>
-          </InterestsContainerOverlay>
-        </MyInterestCard>
-      </Col>
+            <InterestsContainerOverlay>
+              <Title className="fontwe600 text_24 white center">Coding</Title>
 
-      <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-        <MyInterestCard>
-          <InterestImage src={TechImage} preview={false} />
+              <InterestDescription className="fontwe500 white center">
+                I fall in love with coding since I was a kid! I fall in love with coding since I was
+                a kid! I fall in love with coding since I was a kid! I fall in love with coding
+                since I was a kid!
+              </InterestDescription>
+            </InterestsContainerOverlay>
+          </MyInterestCard>
+        </Col>
 
-          <InterestsContainerOverlay>
-            <Title className="fontwe600 text_24 white center">Technology</Title>
+        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
+          <MyInterestCard>
+            <InterestImage src={TechImage} preview={false} />
 
-            <InterestDescription className="fontwe500 white center">
-              I fall in love with coding since I was a kid! I fall in love with coding since I was a
-              kid! I fall in love with coding since I was a kid! I fall in love with coding since I
-              was a kid!
-            </InterestDescription>
-          </InterestsContainerOverlay>
-        </MyInterestCard>
-      </Col>
+            <InterestsContainerOverlay>
+              <Title className="fontwe600 text_24 white center">Technology</Title>
 
-      <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-        <MyInterestCard>
-          <InterestImage src={BlogImage} preview={false} />
+              <InterestDescription className="fontwe500 white center">
+                I fall in love with coding since I was a kid! I fall in love with coding since I was
+                a kid! I fall in love with coding since I was a kid! I fall in love with coding
+                since I was a kid!
+              </InterestDescription>
+            </InterestsContainerOverlay>
+          </MyInterestCard>
+        </Col>
 
-          <InterestsContainerOverlay>
-            <Title className="fontwe600 text_24 white center capitalize">Blogging</Title>
+        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
+          <MyInterestCard>
+            <InterestImage src={BlogImage} preview={false} />
 
-            <InterestDescription className="fontwe500 white center">
-              I fall in love with coding since I was a kid! I fall in love with coding since I was a
-              kid! I fall in love with coding since I was a kid! I fall in love with coding since I
-              was a kid!
-            </InterestDescription>
-          </InterestsContainerOverlay>
-        </MyInterestCard>
-      </Col>
+            <InterestsContainerOverlay>
+              <Title className="fontwe600 text_24 white center capitalize">Blogging</Title>
 
-      <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-        <MyInterestCard>
-          <InterestImage src={DesignImage} preview={false} />
+              <InterestDescription className="fontwe500 white center">
+                I fall in love with coding since I was a kid! I fall in love with coding since I was
+                a kid! I fall in love with coding since I was a kid! I fall in love with coding
+                since I was a kid!
+              </InterestDescription>
+            </InterestsContainerOverlay>
+          </MyInterestCard>
+        </Col>
 
-          <InterestsContainerOverlay>
-            <Title className="fontwe600 text_24 white center capitalize">UI & UX Design</Title>
+        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
+          <MyInterestCard>
+            <InterestImage src={DesignImage} preview={false} />
 
-            <InterestDescription className="fontwe500 white center">
-              I fall in love with coding since I was a kid! I fall in love with coding since I was a
-              kid! I fall in love with coding since I was a kid! I fall in love with coding since I
-              was a kid!
-            </InterestDescription>
-          </InterestsContainerOverlay>
-        </MyInterestCard>
-      </Col>
+            <InterestsContainerOverlay>
+              <Title className="fontwe600 text_24 white center capitalize">UI & UX Design</Title>
 
-      <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-        <MyInterestCard>
-          <InterestImage src={SetupImage} preview={false} />
+              <InterestDescription className="fontwe500 white center">
+                I fall in love with coding since I was a kid! I fall in love with coding since I was
+                a kid! I fall in love with coding since I was a kid! I fall in love with coding
+                since I was a kid!
+              </InterestDescription>
+            </InterestsContainerOverlay>
+          </MyInterestCard>
+        </Col>
 
-          <InterestsContainerOverlay>
-            <Title className="fontwe600 text_24 white center capitalize">office setup</Title>
+        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
+          <MyInterestCard>
+            <InterestImage src={SetupImage} preview={false} />
 
-            <InterestDescription className="fontwe500 white center">
-              I fall in love with coding since I was a kid! I fall in love with coding since I was a
-              kid! I fall in love with coding since I was a kid! I fall in love with coding since I
-              was a kid!
-            </InterestDescription>
-          </InterestsContainerOverlay>
-        </MyInterestCard>
-      </Col>
+            <InterestsContainerOverlay>
+              <Title className="fontwe600 text_24 white center capitalize">office setup</Title>
 
-      <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-        <MyInterestCard>
-          <InterestImage src={MoviewsImage} preview={false} />
+              <InterestDescription className="fontwe500 white center">
+                I fall in love with coding since I was a kid! I fall in love with coding since I was
+                a kid! I fall in love with coding since I was a kid! I fall in love with coding
+                since I was a kid!
+              </InterestDescription>
+            </InterestsContainerOverlay>
+          </MyInterestCard>
+        </Col>
 
-          <InterestsContainerOverlay>
-            <Title className="fontwe600 text_24 white center capitalize">movies</Title>
+        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
+          <MyInterestCard>
+            <InterestImage src={MoviewsImage} preview={false} />
 
-            <InterestDescription className="fontwe500 white center">
-              I fall in love with coding since I was a kid! I fall in love with coding since I was a
-              kid! I fall in love with coding since I was a kid! I fall in love with coding since I
-              was a kid!
-            </InterestDescription>
-          </InterestsContainerOverlay>
-        </MyInterestCard>
-      </Col>
+            <InterestsContainerOverlay>
+              <Title className="fontwe600 text_24 white center capitalize">movies</Title>
 
-      <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-        <MyInterestCard>
-          <InterestImage src={InstagramImage} preview={false} />
+              <InterestDescription className="fontwe500 white center">
+                I fall in love with coding since I was a kid! I fall in love with coding since I was
+                a kid! I fall in love with coding since I was a kid! I fall in love with coding
+                since I was a kid!
+              </InterestDescription>
+            </InterestsContainerOverlay>
+          </MyInterestCard>
+        </Col>
 
-          <InterestsContainerOverlay>
-            <Title className="fontwe600 text_24 white center capitalize">Instagram</Title>
+        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
+          <MyInterestCard>
+            <InterestImage src={InstagramImage} preview={false} />
 
-            <InterestDescription className="fontwe500 white center">
-              I fall in love with coding since I was a kid! I fall in love with coding since I was a
-              kid! I fall in love with coding since I was a kid! I fall in love with coding since I
-              was a kid!
-            </InterestDescription>
-          </InterestsContainerOverlay>
-        </MyInterestCard>
-      </Col>
+            <InterestsContainerOverlay>
+              <Title className="fontwe600 text_24 white center capitalize">Instagram</Title>
 
-      <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-        <MyInterestCard>
-          <InterestImage src={SharingImage} preview={false} />
+              <InterestDescription className="fontwe500 white center">
+                I fall in love with coding since I was a kid! I fall in love with coding since I was
+                a kid! I fall in love with coding since I was a kid! I fall in love with coding
+                since I was a kid!
+              </InterestDescription>
+            </InterestsContainerOverlay>
+          </MyInterestCard>
+        </Col>
 
-          <InterestsContainerOverlay>
-            <Title className="fontwe600 text_24 white center capitalize">sharing</Title>
+        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
+          <MyInterestCard>
+            <InterestImage src={SharingImage} preview={false} />
 
-            <InterestDescription className="fontwe500 white center">
-              I fall in love with coding since I was a kid! I fall in love with coding since I was a
-              kid! I fall in love with coding since I was a kid! I fall in love with coding since I
-              was a kid!
-            </InterestDescription>
-          </InterestsContainerOverlay>
-        </MyInterestCard>
-      </Col>
-    </Row>
-  </InterestsContainer>
-);
+            <InterestsContainerOverlay>
+              <Title className="fontwe600 text_24 white center capitalize">sharing</Title>
+
+              <InterestDescription className="fontwe500 white center">
+                I fall in love with coding since I was a kid! I fall in love with coding since I was
+                a kid! I fall in love with coding since I was a kid! I fall in love with coding
+                since I was a kid!
+              </InterestDescription>
+            </InterestsContainerOverlay>
+          </MyInterestCard>
+        </Col>
+      </Row>
+    </InterestsContainer>
+  );
+};
 
 export default Interests;

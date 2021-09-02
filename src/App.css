@@ -290,6 +290,10 @@ body {
   margin-top: 16px;
 }
 
+.exp_cont {
+  width: 80%;
+}
+
 .myLogo_img {
   width: 60px;
   height: 60px;
@@ -325,8 +329,28 @@ body {
   bottom: 0;
 }
 
+@media screen and (max-width: 1635px) {
+  .exp_cont {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .exp_cont {
+    width: 97%;
+  }
+}
+
 /* SMALL SCREENS  */
 @media screen and (max-width: 768px) {
+  .hide_sm {
+    display: none;
+  }
+
+  .exp_cont {
+    width: 100%;
+  }
+
   .contents_layout {
     margin-left: 0;
     margin-bottom: 2.6rem;
