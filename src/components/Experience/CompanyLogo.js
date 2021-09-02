@@ -5,7 +5,7 @@ import COALogo from '../../assets/images/coaLogo.png';
 
 const CompanyLogo = () => (
   <CompanyLogoCircle className="bg_white">
-    <Image preview={false} width={100} src={COALogo} />
+    <Image preview={false} src={COALogo} />
   </CompanyLogoCircle>
 );
 

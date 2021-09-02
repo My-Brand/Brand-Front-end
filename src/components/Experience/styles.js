@@ -12,4 +12,21 @@ export const CompanyLogoCircle = styled.div`
   transform: translateY(-50%) translateX(-50%);
   display: grid;
   place-content: center;
+
+  img {
+    width: 100px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-50%) translateX(-50%);
+
+    img {
+      width: 50px;
+    }
+  }
 `;
