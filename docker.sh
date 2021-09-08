@@ -1,4 +1,4 @@
 #!/bin/sh
 
 docker build -t issa/brand .
-docker-compose up
+docker-compose up -d

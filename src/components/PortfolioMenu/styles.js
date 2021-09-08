@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 export const PortfolioMenuContainer = styled.div`
   width: 100%;
-  display: flex;
   column-gap: 10%;
   margin: 0 auto;
   margin-bottom: 120px;
   margin-left: 5rem;
+  display: none;
 
   @media screen and (max-width: 768px) {
+    display: flex;
     width: 100%;
     column-gap: 0;
     margin-left: 0;

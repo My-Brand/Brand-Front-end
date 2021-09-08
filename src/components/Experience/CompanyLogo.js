@@ -1,12 +1,14 @@
 import React from 'react';
 import Image from 'antd/lib/image';
+import PropTypes from 'prop-types';
 import { CompanyLogoCircle } from './styles';
-import COALogo from '../../assets/images/coaLogo.png';
 
-const CompanyLogo = () => (
+const CompanyLogo = ({ src }) => (
   <CompanyLogoCircle className="bg_white">
-    <Image preview={false} src={COALogo} />
+    <Image preview={false} src={src} />
   </CompanyLogoCircle>
 );
+
+CompanyLogo.propTypes = { src: PropTypes.string };
 
 export default CompanyLogo;

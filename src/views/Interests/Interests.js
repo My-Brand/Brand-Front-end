@@ -12,6 +12,8 @@ import MoviewsImage from '../../assets/images/movies_interest-min.jpg';
 import InstagramImage from '../../assets/images/instagram_interest-min.jpg';
 import SharingImage from '../../assets/images/sharing_interest-min.jpg';
 import Helmet from '../../components/SEO/Helmet';
+import FooterNavigation from '../../components/FooterNavigation';
+import routesConfig from '../../utils/routesConfig';
 import {
   MyInterestCard,
   InterestsContainer,
@@ -31,7 +33,7 @@ const Interests = () => {
   return (
     <InterestsContainer>
       <Title className="fontwe600 text_50 black mabo0">{message.titles.interests}</Title>;
-      <Row gutter={32} className="interests_cont">
+      <Row gutter={32}>
         <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
           <MyInterestCard>
             <InterestImage src={CodingImage} preview={false} />
@@ -144,7 +146,7 @@ const Interests = () => {
           </MyInterestCard>
         </Col>
 
-        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
+        <Col xs={24} sm={24} md={8} lg={6}>
           <MyInterestCard>
             <InterestImage src={SharingImage} preview={false} />
 
@@ -160,6 +162,8 @@ const Interests = () => {
           </MyInterestCard>
         </Col>
       </Row>
+
+      <FooterNavigation leftTitle="Social life" rightTitle="Skillset" toLeft={routesConfig.PORTFOLIO.Index.url} toRight={routesConfig.PORTFOLIO.SkillSet.url} />
     </InterestsContainer>
   );
 };

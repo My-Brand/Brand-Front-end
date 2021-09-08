@@ -1,3 +1,1 @@
-import CompanyLogo from './CompanyLogo';
-
-export { CompanyLogo };
+export { default } from './ExperienceContents';

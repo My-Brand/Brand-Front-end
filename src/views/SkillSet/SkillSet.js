@@ -3,6 +3,8 @@ import Typography from 'antd/lib/typography';
 import Row from 'antd/lib/row';
 import { message } from '../../utils/message';
 import SkillCategory from '../../components/SkillSet';
+import FooterNavigation from '../../components/FooterNavigation';
+import routesConfig from '../../utils/routesConfig';
 import Helmet from '../../components/SEO/Helmet';
 import { SkillSetContainer, TopThree, StillLearningCont } from './styles';
 
@@ -32,6 +34,8 @@ const SkillSet = () => {
           &#128591; {message.body.skillset.footer_text}
         </Title>
       </StillLearningCont>
+
+      <FooterNavigation leftTitle="Interests" rightTitle="Experience" toLeft={routesConfig.PORTFOLIO.Interests.url} toRight={routesConfig.PORTFOLIO.Experience.url} />
     </SkillSetContainer>
   );
 };
