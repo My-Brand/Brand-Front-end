@@ -3,26 +3,23 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { LeftLink, RightLink, PrevNextMenu } from './styles';
 
-const FooterNavigation = ({ leftTitle, rightTitle, toLeft, toRight }) => <PrevNextMenu width="100%" justify="space-between" className="pointer mato32">
+const NavigationButtons = ({ leftTitle, rightTitle, toLeft, toRight }) => (
+  <PrevNextMenu justify="flex-end" column_gap="32px" className="pointer mato32">
     <Link className="black" to={toLeft}>
-        <LeftLink>
-            {leftTitle}
-        </LeftLink>
+      <LeftLink>{leftTitle}</LeftLink>
     </Link>
 
     <Link className="black" to={toRight}>
-        <RightLink>
-            {rightTitle}
-        </RightLink>
+      <RightLink>{rightTitle}</RightLink>
     </Link>
+  </PrevNextMenu>
+);
 
-</PrevNextMenu>;
-
-FooterNavigation.propTypes = {
+NavigationButtons.propTypes = {
   leftTitle: PropTypes.string,
   rightTitle: PropTypes.string,
   toLeft: PropTypes.string,
   toRight: PropTypes.string
 };
 
-export default FooterNavigation;
+export default NavigationButtons;

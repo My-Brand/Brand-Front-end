@@ -26,6 +26,18 @@ export const AboutContainer = styled.section`
   } ;
 `;
 
+export const NavigationContainer = styled.div`
+  width: calc(80px + 60%);
+
+  @media screen and (max-width: 1610px) {
+    width: calc(80px + 80%);
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  } ;
+`;
+
 export const AboutTextContainer = styled.section`
   width: 90%;
 

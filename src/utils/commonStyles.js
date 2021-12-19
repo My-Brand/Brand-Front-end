@@ -34,7 +34,7 @@ export const Flex = styled.div`
   column-gap: ${(props) => props.column_gap || '12px'};
   width: ${(props) => props.width || 'auto'};
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     flex-direction: ${(props) => props.direction_sm || 'row'};
     text-align: ${(props) => props.direction_sm && 'center'};
     row-gap: ${(props) => props.direction_sm && '12px'};

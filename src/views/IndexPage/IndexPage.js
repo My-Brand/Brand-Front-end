@@ -19,10 +19,7 @@ import {
 const { Title } = Typography;
 
 const IndexPage = () => {
-  Helmet(
-    'Issa Jean Marie | Front-End Web Developer',
-    'I am a freelancer and employed Front-End Web Developer, with my solid skills I can build you performance and SE Optimized Web Application.'
-  );
+  Helmet(message.seo.indexPage.title, message.seo.indexPage.desc);
 
   return (
     <IndexPageContainer>
