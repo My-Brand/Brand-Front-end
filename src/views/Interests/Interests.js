@@ -12,7 +12,7 @@ import MoviewsImage from '../../assets/images/movies_interest-min.jpg';
 import InstagramImage from '../../assets/images/instagram_interest-min.jpg';
 import SharingImage from '../../assets/images/sharing_interest-min.jpg';
 import Helmet from '../../components/SEO/Helmet';
-import FooterNavigation from '../../components/FooterNavigation';
+import NavigationButtons from '../../components/NavigationButtons';
 import routesConfig from '../../utils/routesConfig';
 import {
   MyInterestCard,
@@ -25,145 +25,85 @@ import {
 const { Title } = Typography;
 
 const Interests = () => {
-  Helmet(
-    'Issa Dev | My favorites',
-    'Coding, Blogging, UI/UX, Instagram, Movies, Good Office Setup, Technical Staffs, and Sharing are my great definitions!'
-  );
+  Helmet(message.seo.interests.title, message.seo.interests.desc);
+
+  const interests = [
+    {
+      title: message.body.interests.titles.coding,
+      desc: message.body.interests.desc.coding,
+      pic: CodingImage
+    },
+    {
+      title: message.body.interests.titles.tech,
+      desc: message.body.interests.desc.tech,
+      pic: TechImage
+    },
+    {
+      title: message.body.interests.titles.blog,
+      desc: message.body.interests.desc.blog,
+      pic: BlogImage
+    },
+
+    {
+      title: message.body.interests.titles.ux,
+      desc: message.body.interests.desc.ux,
+      pic: DesignImage
+    },
+    {
+      title: message.body.interests.titles.setup,
+      desc: message.body.interests.desc.setup,
+      pic: SetupImage
+    },
+    {
+      title: message.body.interests.titles.movies,
+      desc: message.body.interests.desc.movies,
+      pic: MoviewsImage
+    },
+    {
+      title: message.body.interests.titles.instagram,
+      desc: message.body.interests.desc.instagram,
+      pic: InstagramImage
+    },
+    {
+      title: message.body.interests.titles.sharing,
+      desc: message.body.interests.desc.sharing,
+      pic: SharingImage
+    }
+  ];
 
   return (
     <InterestsContainer>
-      <Title className="fontwe600 text_50 black mabo0">{message.titles.interests}</Title>;
-      <Row gutter={32}>
-        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-          <MyInterestCard>
-            <InterestImage src={CodingImage} preview={false} />
-
-            <InterestsContainerOverlay>
-              <Title className="fontwe600 text_24 white center">Coding</Title>
-
-              <InterestDescription className="fontwe500 white center">
-                I fall in love with coding since I was a kid! I fall in love with coding since I was
-                a kid! I fall in love with coding since I was a kid! I fall in love with coding
-                since I was a kid!
-              </InterestDescription>
-            </InterestsContainerOverlay>
-          </MyInterestCard>
+      <Row>
+        <Col flex="none">
+          <Title className="fontwe600 text_50 black mabo0">{message.titles.interests}</Title>;
         </Col>
 
-        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-          <MyInterestCard>
-            <InterestImage src={TechImage} preview={false} />
-
-            <InterestsContainerOverlay>
-              <Title className="fontwe600 text_24 white center">Technology</Title>
-
-              <InterestDescription className="fontwe500 white center">
-                I fall in love with coding since I was a kid! I fall in love with coding since I was
-                a kid! I fall in love with coding since I was a kid! I fall in love with coding
-                since I was a kid!
-              </InterestDescription>
-            </InterestsContainerOverlay>
-          </MyInterestCard>
-        </Col>
-
-        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-          <MyInterestCard>
-            <InterestImage src={BlogImage} preview={false} />
-
-            <InterestsContainerOverlay>
-              <Title className="fontwe600 text_24 white center capitalize">Blogging</Title>
-
-              <InterestDescription className="fontwe500 white center">
-                I fall in love with coding since I was a kid! I fall in love with coding since I was
-                a kid! I fall in love with coding since I was a kid! I fall in love with coding
-                since I was a kid!
-              </InterestDescription>
-            </InterestsContainerOverlay>
-          </MyInterestCard>
-        </Col>
-
-        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-          <MyInterestCard>
-            <InterestImage src={DesignImage} preview={false} />
-
-            <InterestsContainerOverlay>
-              <Title className="fontwe600 text_24 white center capitalize">UI & UX Design</Title>
-
-              <InterestDescription className="fontwe500 white center">
-                I fall in love with coding since I was a kid! I fall in love with coding since I was
-                a kid! I fall in love with coding since I was a kid! I fall in love with coding
-                since I was a kid!
-              </InterestDescription>
-            </InterestsContainerOverlay>
-          </MyInterestCard>
-        </Col>
-
-        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-          <MyInterestCard>
-            <InterestImage src={SetupImage} preview={false} />
-
-            <InterestsContainerOverlay>
-              <Title className="fontwe600 text_24 white center capitalize">office setup</Title>
-
-              <InterestDescription className="fontwe500 white center">
-                I fall in love with coding since I was a kid! I fall in love with coding since I was
-                a kid! I fall in love with coding since I was a kid! I fall in love with coding
-                since I was a kid!
-              </InterestDescription>
-            </InterestsContainerOverlay>
-          </MyInterestCard>
-        </Col>
-
-        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-          <MyInterestCard>
-            <InterestImage src={MoviewsImage} preview={false} />
-
-            <InterestsContainerOverlay>
-              <Title className="fontwe600 text_24 white center capitalize">movies</Title>
-
-              <InterestDescription className="fontwe500 white center">
-                I fall in love with coding since I was a kid! I fall in love with coding since I was
-                a kid! I fall in love with coding since I was a kid! I fall in love with coding
-                since I was a kid!
-              </InterestDescription>
-            </InterestsContainerOverlay>
-          </MyInterestCard>
-        </Col>
-
-        <Col xs={24} sm={24} md={8} lg={6} className="mabo32">
-          <MyInterestCard>
-            <InterestImage src={InstagramImage} preview={false} />
-
-            <InterestsContainerOverlay>
-              <Title className="fontwe600 text_24 white center capitalize">Instagram</Title>
-
-              <InterestDescription className="fontwe500 white center">
-                I fall in love with coding since I was a kid! I fall in love with coding since I was
-                a kid! I fall in love with coding since I was a kid! I fall in love with coding
-                since I was a kid!
-              </InterestDescription>
-            </InterestsContainerOverlay>
-          </MyInterestCard>
-        </Col>
-
-        <Col xs={24} sm={24} md={8} lg={6}>
-          <MyInterestCard>
-            <InterestImage src={SharingImage} preview={false} />
-
-            <InterestsContainerOverlay>
-              <Title className="fontwe600 text_24 white center capitalize">sharing</Title>
-
-              <InterestDescription className="fontwe500 white center">
-                I fall in love with coding since I was a kid! I fall in love with coding since I was
-                a kid! I fall in love with coding since I was a kid! I fall in love with coding
-                since I was a kid!
-              </InterestDescription>
-            </InterestsContainerOverlay>
-          </MyInterestCard>
+        <Col flex="auto">
+          <NavigationButtons
+            leftTitle="Social life"
+            rightTitle="Skillset"
+            toLeft={routesConfig.PORTFOLIO.Index.url}
+            toRight={routesConfig.PORTFOLIO.SkillSet.url}
+          />
         </Col>
       </Row>
+      <Row gutter={32}>
+        {interests.map((interest) => (
+          <Col xs={24} sm={24} md={8} lg={6} key={interest.title} className="mabo32">
+            <MyInterestCard>
+              <InterestImage src={interest.pic} preview={false} />
 
-      <FooterNavigation leftTitle="Social life" rightTitle="Skillset" toLeft={routesConfig.PORTFOLIO.Index.url} toRight={routesConfig.PORTFOLIO.SkillSet.url} />
+              <InterestsContainerOverlay>
+                <Title className="fontwe600 text_24 white center">{interest.title}</Title>
+
+                <InterestDescription className="fontwe500 white center">
+                  {interest.desc}
+                </InterestDescription>
+              </InterestsContainerOverlay>
+            </MyInterestCard>
+          </Col>
+        ))}
+      </Row>
     </InterestsContainer>
   );
 };

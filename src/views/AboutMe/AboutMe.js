@@ -13,61 +13,68 @@ import GitHub from '../../assets/icons/github.png';
 import Google from '../../assets/icons/google-plus.png';
 import StackOverflow from '../../assets/icons/stack-overflow.png';
 import Helmet from '../../components/SEO/Helmet';
-import FooterNavigation from '../../components/FooterNavigation';
+import NavigationButtons from '../../components/NavigationButtons';
 import routesConfig from '../../utils/routesConfig';
 import {
   AboutContainer,
   AboutTextContainer,
   AboutLogoContainer,
   AboutSocialMediaIconsContainer,
-  CommunityText
+  CommunityText,
+  NavigationContainer
 } from './styles';
 
 const { Title } = Typography;
 
 const AboutMe = () => {
-  Helmet(
-    'Issa Dev | Social Network Contribution',
-    'Open Source Contribution has become my best inspiring work. I share skills on my social media especially Instagram as my specialty.'
-  );
+  Helmet(message.seo.aboutMe.title, message.seo.aboutMe.desc);
   return (
-    <AboutContainer>
-      <AboutLogoContainer>
-        <Image src={HelloWorldLogo} preview={false} className="myLogo_About" />
-      </AboutLogoContainer>
+    <>
+      <NavigationContainer className="mabo24">
+        <NavigationButtons
+          leftTitle="Home"
+          rightTitle="Interests"
+          toLeft={routesConfig.PORTFOLIO.url}
+          toRight={routesConfig.PORTFOLIO.Interests.url}
+        />
+      </NavigationContainer>
 
-      <Title className="black fontwe600 mabo64 text_50">{message.titles.aboutMe.title1}</Title>
+      <AboutContainer>
+        <AboutLogoContainer>
+          <Image src={HelloWorldLogo} preview={false} className="myLogo_About" />
+        </AboutLogoContainer>
 
-      <AboutTextContainer className="mabo32">
-        <p className="text_16 ">
-          {message.body.about.contributionText.text1}{' '}
-          <Link to="#" className="blue">
-            {message.body.about.contributionText.begginerLink}
-          </Link>{' '}
-          {message.body.about.contributionText.text2}
-        </p>
-      </AboutTextContainer>
+        <Title className="black fontwe600 mabo64 text_50">{message.titles.aboutMe.title1}</Title>
 
-      <Row gutter={16} className="communit_cont">
-        <Col>
-          <CommunityText className="mabo32">{message.body.about.joinCommunity}</CommunityText>
-        </Col>
+        <AboutTextContainer className="mabo32">
+          <p className="text_16 ">
+            {message.body.about.contributionText.text1}{' '}
+            <Link to="#" className="blue">
+              {message.body.about.contributionText.begginerLink}
+            </Link>{' '}
+            {message.body.about.contributionText.text2}
+          </p>
+        </AboutTextContainer>
 
-        <Col>
-          <ExpandMoreOutlinedIcon className="animated_down_arrow" />
-        </Col>
-      </Row>
+        <Row gutter={16} className="communit_cont">
+          <Col>
+            <CommunityText className="mabo32">{message.body.about.joinCommunity}</CommunityText>
+          </Col>
 
-      <AboutSocialMediaIconsContainer>
-        <Image src={Instagram} preview={false} className="social_icon" />
-        <Image src={LinkedIn} preview={false} className="social_icon" />
-        <Image src={GitHub} preview={false} className="social_icon" />
-        <Image src={Google} preview={false} className="social_icon" />
-        <Image src={StackOverflow} preview={false} className="social_icon" />
-      </AboutSocialMediaIconsContainer>
+          <Col>
+            <ExpandMoreOutlinedIcon className="animated_down_arrow" />
+          </Col>
+        </Row>
 
-      <FooterNavigation leftTitle="Home" rightTitle="Interests" toLeft={routesConfig.PORTFOLIO.url} toRight={routesConfig.PORTFOLIO.Interests.url} />
-    </AboutContainer>
+        <AboutSocialMediaIconsContainer>
+          <Image src={Instagram} preview={false} className="social_icon" />
+          <Image src={LinkedIn} preview={false} className="social_icon" />
+          <Image src={GitHub} preview={false} className="social_icon" />
+          <Image src={Google} preview={false} className="social_icon" />
+          <Image src={StackOverflow} preview={false} className="social_icon" />
+        </AboutSocialMediaIconsContainer>
+      </AboutContainer>
+    </>
   );
 };
 

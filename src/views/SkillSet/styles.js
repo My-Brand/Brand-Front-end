@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SkillSetContainer = styled.section`
-  width: 97%;
+  width: 95%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
