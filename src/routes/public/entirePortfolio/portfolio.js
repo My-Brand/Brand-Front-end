@@ -19,6 +19,7 @@ const Portfolio = () => (
         <Route path={routesConfig.PORTFOLIO.SkillSet.url} component={SkillSet} exact />
         <Route path={routesConfig.PORTFOLIO.Experience.url} component={Experience} exact />
       </Switch>
+
     </EntirePortfolioContents>
   </EntirePortfolioContainer>
 );

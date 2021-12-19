@@ -13,6 +13,8 @@ import GitHub from '../../assets/icons/github.png';
 import Google from '../../assets/icons/google-plus.png';
 import StackOverflow from '../../assets/icons/stack-overflow.png';
 import Helmet from '../../components/SEO/Helmet';
+import FooterNavigation from '../../components/FooterNavigation';
+import routesConfig from '../../utils/routesConfig';
 import {
   AboutContainer,
   AboutTextContainer,
@@ -63,6 +65,8 @@ const AboutMe = () => {
         <Image src={Google} preview={false} className="social_icon" />
         <Image src={StackOverflow} preview={false} className="social_icon" />
       </AboutSocialMediaIconsContainer>
+
+      <FooterNavigation leftTitle="Home" rightTitle="Interests" toLeft={routesConfig.PORTFOLIO.url} toRight={routesConfig.PORTFOLIO.Interests.url} />
     </AboutContainer>
   );
 };
